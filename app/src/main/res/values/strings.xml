@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PocketJukebox</string>
+    <string name="main_instruction">Click Add Song button to add song to playlist.&#10;Click Queue to see which songs are currently in the play queue.</string>
+    <string name="add_button">Add Song</string>
+    <string name="queue_button">Queue</string>
+    <string name="current">Now Playing</string>
+</resources>
