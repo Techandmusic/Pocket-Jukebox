@@ -17,7 +17,7 @@ public class Song {
         return mArtist;
     }
 
-    public String getmTitle() {
+    public String getTitle() {
         return mTitle;
     }
 }
