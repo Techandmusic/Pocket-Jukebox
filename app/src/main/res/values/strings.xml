@@ -4,4 +4,5 @@
     <string name="add_button">Add Song</string>
     <string name="queue_button">Queue</string>
     <string name="current">Now Playing</string>
+    <string name="category_available_songs">Available Songs</string>
 </resources>
