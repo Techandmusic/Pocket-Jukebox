@@ -39,5 +39,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         //return the list item with 2 text views
         return songListItem;
+
+
     }
 }

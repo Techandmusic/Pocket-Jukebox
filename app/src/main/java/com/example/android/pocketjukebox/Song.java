@@ -1,5 +1,7 @@
 package com.example.android.pocketjukebox;
 
+
+
 public class Song {
     //String value
     private String mArtist;
@@ -20,4 +22,6 @@ public class Song {
     public String getTitle() {
         return mTitle;
     }
+
+
 }

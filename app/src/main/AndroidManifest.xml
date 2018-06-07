@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".AvailableSongsActivity"
                   android:label="@string/category_available_songs"/>
+        <activity android:name=".QueueActivity"
+                  android:label="@string/current"/>
 
     </application>
 

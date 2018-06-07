@@ -1,8 +1,11 @@
 package com.example.android.pocketjukebox;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -14,8 +17,9 @@ public class AvailableSongsActivity extends AppCompatActivity {
         setContentView(R.layout.available_songs_activity);
 
         //Create ArrayList of songs
-        ArrayList<Song> tracks = new ArrayList<Song>();
+        final ArrayList<Song> tracks = new ArrayList<Song>();
         tracks.add(new Song("Billy Squier", "The Stroke"));
+        tracks.add(new Song("The Jam", "A Town Called Malice"));
         tracks.add(new Song("Imagine Dragons", "Shots"));
         tracks.add(new Song("Joe Satriani", "Ice 9"));
         tracks.add(new Song("Johnny Cash", "Folsom Prison Blues"));
@@ -33,13 +37,28 @@ public class AvailableSongsActivity extends AppCompatActivity {
         tracks.add(new Song("Tina Turner", "You Better Be Good To Me"));
 
         //Create the ArrayAdapter using context and ArrayList as parameters
-        SongAdapter adapter = new SongAdapter(this, tracks);
+        final SongAdapter adapter = new SongAdapter(this, tracks);
 
         //Find ListView in Activity
-        ListView listView = (ListView) findViewById(R.id.List);
+        final ListView listView = (ListView) findViewById(R.id.List);
 
         //Make ListView display list items using ArrayAdapter
-        //Call setAdapter method to mak this happen
+        //Call setAdapter method to make this happen
         listView.setAdapter(adapter);
+
+        //OnItemClickListener for song list
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Song selectedSong = adapter.getItem(position);
+                Intent i = new Intent(AvailableSongsActivity.this, QueueActivity.class);
+                i.putExtra("artist", selectedSong.getArtist());
+                i.putExtra("title", selectedSong.getTitle());
+                startActivity(i);
+            }
+        });
+
+
+
     }
 }
