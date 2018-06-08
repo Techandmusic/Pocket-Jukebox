@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class CurrentSongActivity extends AppCompatActivity {
@@ -25,5 +27,15 @@ public class CurrentSongActivity extends AppCompatActivity {
         //Set string variables from intent to TextViews
         currentArtist.setText(addArtist);
         currentTitle.setText(addTitle);
+
+        //onClickListener for Home Screen button
+        Button home = (Button) findViewById(R.id.home_button);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHome = new Intent(CurrentSongActivity.this, MainActivity.class);
+                startActivity(goHome);
+            }
+        });
     }
 }
