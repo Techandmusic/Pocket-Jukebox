@@ -51,7 +51,7 @@ public class AvailableSongsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Song selectedSong = adapter.getItem(position);
-                Intent i = new Intent(AvailableSongsActivity.this, QueueActivity.class);
+                Intent i = new Intent(AvailableSongsActivity.this, CurrentSongActivity.class);
                 i.putExtra("artist", selectedSong.getArtist());
                 i.putExtra("title", selectedSong.getTitle());
                 startActivity(i);

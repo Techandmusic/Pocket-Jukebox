@@ -27,15 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button queue = (Button) findViewById(R.id.queue_button);
 
-        queue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, QueueActivity.class);
-                startActivity(i);
-            }
-        });
 
 
 
