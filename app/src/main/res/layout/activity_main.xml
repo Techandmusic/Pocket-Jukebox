@@ -1,61 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin">
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/title"
-            android:text="@string/app_name"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
+            style="@style/ContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_margin"
+            android:layout_centerHorizontal="true"
             android:textSize="@dimen/large_text"
-            android:padding="@dimen/large_margin"/>
-
-
-
+            android:text="@string/app_name"/>
 
 
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
             android:id="@+id/instructional"
-            android:text="@string/main_instruction"
-            android:paddingLeft="@dimen/large_margin"
-            android:paddingBottom="@dimen/small_margin"/>
-
-
-
-        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/buttonContainer"
-            android:paddingLeft="@dimen/xl_margin">
+            android:paddingBottom="@dimen/large_margin"
+            android:paddingLeft="@dimen/large_margin"
+            android:paddingRight="@dimen/large_margin"
+            android:layout_below="@id/title"
+            android:text="@string/main_instruction"
+            android:textColor="@android:color/white" />
+
+
+
 
             <Button
+                android:id="@+id/add_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/add_button"
-                android:text="@string/add_button"
-                android:layout_marginLeft="@dimen/xl_margin"/>
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/instructional"
+                android:text="@string/add_button" />
 
 
 
-        </LinearLayout>
 
-    </LinearLayout>
-
-
+    </RelativeLayout>
 
 
 </ScrollView>

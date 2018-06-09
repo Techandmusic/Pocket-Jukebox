@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PocketJukebox</string>
+    <string name="app_name">Pocket&#160;Jukebox</string>
     <string name="main_instruction">Click Pick Song button to choose song to play.&#10;Click Home Screen button in Now Playing to return to this screen.</string>
     <string name="add_button">Pick Song</string>
     <string name="home">Home Screen</string>
