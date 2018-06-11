@@ -34,6 +34,16 @@
             android:text="@string/main_instruction"
             android:textColor="@android:color/white" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/microphone"
+            android:layout_below="@id/instructional"
+            android:id="@+id/microphone"
+            android:layout_margin="@dimen/large_margin"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"/>
+
 
 
 
@@ -42,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@id/instructional"
+                android:layout_below="@id/microphone"
                 android:text="@string/add_button" />
 
 

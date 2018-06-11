@@ -5,4 +5,5 @@
     <string name="home">Home Screen</string>
     <string name="current">Now Playing</string>
     <string name="category_available_songs">Available Songs</string>
+    <string name="description">Image of Microphone</string>
 </resources>

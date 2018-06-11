@@ -21,6 +21,16 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="true"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/microphone"
+            android:layout_below="@id/now_playing"
+            android:id="@+id/microphone"
+            android:layout_margin="@dimen/large_margin"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"/>
+
         <TextView
             android:id="@+id/artist"
             style="@style/ContentText"
@@ -29,7 +39,7 @@
             android:paddingBottom="@dimen/small_margin"
             android:paddingLeft="@dimen/large_margin"
             android:paddingRight="@dimen/large_margin"
-            android:layout_below="@id/now_playing"
+            android:layout_below="@id/microphone"
             android:textColor="@android:color/white"
             android:textSize="@dimen/large_text" />
 
@@ -41,7 +51,8 @@
             android:paddingBottom="@dimen/view_height"
             android:paddingLeft="@dimen/large_margin"
             android:paddingRight="@dimen/large_margin"
-            android:layout_below="@id/artist"/>
+            android:layout_below="@id/artist"
+            android:textSize="@dimen/medium_text"/>
 
         <Button
             android:id="@+id/home_button"
