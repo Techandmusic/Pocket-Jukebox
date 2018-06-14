@@ -14,4 +14,13 @@
         <item name="android:fontFamily">Roboto</item>
     </style>
 
+    <style name="micImage">
+        <item name="android:layout_width">@dimen/xxl_view</item>
+        <item name="android:layout_height">@dimen/xxl_view</item>
+        <item name="android:src">@drawable/microphone</item>
+        <item name="android:layout_margin">@dimen/large_margin</item>
+        <item name="android:contentDescription">@string/description</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
 </resources>
